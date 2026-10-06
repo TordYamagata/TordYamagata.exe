@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TordYamagata.exe</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- =====================================================
+         DESKTOP
+    ====================================================== -->
+
+    <div class="desktop">
+
+        <!-- ÍCONES -->
+
+        <div class="desktop-icons">
+
+            <div class="desktop-icon" onclick="openWindow('sobre')">
+                <div class="icon">👤</div>
+                <span>Sobre Mim</span>
+            </div>
+
+            <div class="desktop-icon" onclick="openWindow('projetos')">
+                <div class="icon">📁</div>
+                <span>Projetos</span>
+            </div>
+
+            <div class="desktop-icon" onclick="openWindow('habilidades')">
+                <div class="icon">💻</div>
+                <span>Habilidades</span>
+            </div>
+
+            <div class="desktop-icon" onclick="openWindow('github')">
+                <div class="icon">🌐</div>
+                <span>GitHub</span>
+            </div>
+
+            <div class="desktop-icon" onclick="openWindow('terminal')">
+                <div class="icon">▣</div>
+                <span>Terminal</span>
+            </div>
+
+        </div>
+
+
+        <!-- =================================================
+             JANELA SOBRE MIM
+        ================================================== -->
+
+        <section class="window about-window" id="sobre">
+
+            <div class="title-bar">
+
+                <span>👤 Sobre TordYamagata</span>
+
+                <div class="window-buttons">
+
+                    <button onclick="minimizeWindow('sobre')">
+                        _
+                    </button>
+
+                    <button onclick="maximizeWindow('sobre')">
+                        □
+                    </button>
+
+                    <button onclick="closeWindow('sobre')">
+                        ×
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <div class="menu-bar">
+
+                Arquivo
+                Editar
+                Exibir
+                Ajuda
+
+            </div>
+
+
+            <div class="about-content">
+
+                <div class="profile">
+
+                    <div class="profile-picture">
+                        <img src="https://i.pinimg.com/736x/48/3f/64/483f645d39724fb27fcae7d4bec6fd35.jpg" alt="" width="100%">
+                    </div>
+
+                    <div>
+
+                        <h1>TordYamagata</h1>
+
+                        <p>
+                            Desenvolvedor em formação
+                        </p>
+
+                        <p class="status">
+                            ● Online
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <hr>
+
+
+                <h2>Sobre Mim</h2>
+
+                <p>
+                    Olá! Eu sou <strong>TordYamagata</strong>.
+                </p>
+
+                <p>
+                    Sou apaixonado por programação, desenvolvimento
+                    web e criação de projetos utilizando diferentes
+                    tecnologias.
+                </p>
+
+                <p>
+                    Gosto de transformar ideias em aplicações,
+                    interfaces e experiências digitais.
+                </p>
+
+
+                <div class="buttons-area">
+
+                    <button onclick="openWindow('projetos')">
+                        📁 Ver Projetos
+                    </button>
+
+                    <button onclick="openWindow('habilidades')">
+                        💻 Habilidades
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             PROJETOS
+        ================================================== -->
+
+        <section class="window projects-window" id="projetos">
+
+            <div class="title-bar">
+
+                <span>📁 Meus Projetos</span>
+
+                <div class="window-buttons">
+
+                    <button onclick="minimizeWindow('projetos')">
+                        _
+                    </button>
+
+                    <button onclick="maximizeWindow('projetos')">
+                        □
+                    </button>
+
+                    <button onclick="closeWindow('projetos')">
+                        ×
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <div class="menu-bar">
+
+                Arquivo
+                Editar
+                Exibir
+                Favoritos
+                Ajuda
+
+            </div>
+
+
+            <div class="projects-content">
+
+                <h2>Meus Projetos</h2>
+
+                <p>
+                    Alguns projetos e estudos desenvolvidos.
+                </p>
+
+
+                <div class="projects-grid">
+
+
+                    <!-- PROJETO 1 -->
+
+                    <div class="project">
+
+                        <div class="project-icon">
+                            <img src="https://i.pinimg.com/originals/4d/3f/d5/4d3fd5c79837384de61fd2ca64da03a7.gif" alt="" width="50px">
+                        </div>
+
+                        <h3>
+                            Gotham City
+                        </h3>
+
+                        <p>
+                            Site inspirado no universo de Gotham,
+                            desenvolvido com HTML, CSS e JavaScript.
+                        </p>
+
+                        <button
+                            onclick="openGithub(
+                            'https://github.com/TordYamagata/Gotham-City-Police-Department-Site'
+                            )">
+
+                            Ver projeto
+
+                        </button>
+
+                    </div>
+
+
+                    <!-- PROJETO 2 -->
+
+                    <div class="project">
+
+                        <div class="project-icon">
+                            <img src="https://i.pinimg.com/originals/8e/08/b9/8e08b9961b83aa4228c6ede7f4607287.gif" alt="" width="50px">
+                        </div>
+
+                        <h3>
+                            CRUD Alunos
+                        </h3>
+
+                        <p>
+                            Sistema para gerenciamento de alunos
+                            utilizando operações CRUD.
+                        </p>
+
+                        <button
+                            onclick="openGithub(
+                            'https://github.com/TordYamagata/crudAlunos'
+                            )">
+
+                            Ver projeto
+
+                        </button>
+
+                    </div>
+
+
+                    <!-- PROJETO 3 -->
+
+                    <div class="project">
+
+                        <div class="project-icon">
+                            <img src="https://i.pinimg.com/originals/8e/08/b9/8e08b9961b83aa4228c6ede7f4607287.gif" alt="" width="50px">
+                        </div>
+
+                        <h3>
+                            TestHTML
+                        </h3>
+
+                        <p>
+                            Projeto experimental para estudos
+                            de desenvolvimento web.
+                        </p>
+
+                        <button
+                            onclick="openGithub(
+                            'https://github.com/TordYamagata/TestHTML'
+                            )">
+
+                            Ver projeto
+
+                        </button>
+
+                    </div>
+
+
+                    <!-- PROJETO 4 -->
+
+                    <div class="project">
+
+                        <div class="project-icon">
+                            <img src="https://i.pinimg.com/originals/4d/3f/d5/4d3fd5c79837384de61fd2ca64da03a7.gif" alt="" width="50px">
+                        </div>
+
+                        <h3>
+                            Projeto MVC Escola
+                        </h3>
+
+                        <p>
+                            Projeto acadêmico utilizando arquitetura
+                            MVC para gerenciamento escolar.
+                        </p>
+
+                        <button
+                            onclick="openGithub(
+                            'https://github.com/TordYamagata/projeto-mvc-escola'
+                            )">
+
+                            Ver projeto
+
+                        </button>
+
+                    </div>
+
+
+                    <!-- PROJETO 5 -->
+
+                    <div class="project">
+
+                        <div class="project-icon">
+                            <img src="https://i.pinimg.com/originals/4d/3f/d5/4d3fd5c79837384de61fd2ca64da03a7.gif" alt="" width="50px">
+                        </div>
+
+                        <h3>
+                            Modal e Dark Mode
+                        </h3>
+
+                        <p>
+                            Projeto de interface utilizando modal
+                            e modo escuro.
+                        </p>
+
+                        <button
+                            onclick="openGithub(
+                            'https://github.com/TordYamagata/Modal-e-Darkmode'
+                            )">
+
+                            Ver projeto
+
+                        </button>
+
+                    </div>
+
+
+                    <!-- PROJETO 6 -->
+
+                    <div class="project">
+
+                        <div class="project-icon">
+                            <img src="https://i.pinimg.com/originals/8e/08/b9/8e08b9961b83aa4228c6ede7f4607287.gif" alt="" width="50px">
+                        </div>
+
+                        <h3>
+                            FalaQ
+                        </h3>
+
+                        <p>
+                            Projeto Laravel envolvendo perguntas,
+                            eventos, autenticação e moderação.
+                        </p>
+
+                        <button
+                            onclick="openGithub(
+                            'https://github.com/TordYamagata/falaq-base'
+                            )">
+
+                            Ver projeto
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             HABILIDADES
+        ================================================== -->
+
+        <section class="window skills-window" id="habilidades">
+
+            <div class="title-bar">
+
+                <span>💻 Habilidades.exe</span>
+
+                <div class="window-buttons">
+
+                    <button onclick="minimizeWindow('habilidades')">
+                        _
+                    </button>
+
+                    <button onclick="maximizeWindow('habilidades')">
+                        □
+                    </button>
+
+                    <button onclick="closeWindow('habilidades')">
+                        ×
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <div class="window-content">
+
+                <h2>
+                    Habilidades
+                </h2>
+
+
+                <div class="skill">
+
+                    <span>HTML</span>
+
+                    <div class="bar">
+                        <div style="width: 90%"></div>
+                    </div>
+
+                </div>
+
+
+                <div class="skill">
+
+                    <span>CSS</span>
+
+                    <div class="bar">
+                        <div style="width: 85%"></div>
+                    </div>
+
+                </div>
+
+
+                <div class="skill">
+
+                    <span>JavaScript</span>
+
+                    <div class="bar">
+                        <div style="width: 75%"></div>
+                    </div>
+
+                </div>
+
+
+                <div class="skill">
+
+                    <span>PHP / Laravel</span>
+
+                    <div class="bar">
+                        <div style="width: 70%"></div>
+                    </div>
+
+                </div>
+
+
+                <div class="skill">
+
+                    <span>Python</span>
+
+                    <div class="bar">
+                        <div style="width: 70%"></div>
+                    </div>
+
+                </div>
+
+
+                <div class="skill">
+
+                    <span>SQL</span>
+
+                    <div class="bar">
+                        <div style="width: 75%"></div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             GITHUB
+        ================================================== -->
+
+        <section class="window github-window" id="github">
+
+            <div class="title-bar">
+
+                <span>🌐 GitHub Explorer</span>
+
+                <div class="window-buttons">
+
+                    <button onclick="minimizeWindow('github')">
+                        _
+                    </button>
+
+                    <button onclick="maximizeWindow('github')">
+                        □
+                    </button>
+
+                    <button onclick="closeWindow('github')">
+                        ×
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <div class="menu-bar">
+
+                Arquivo
+                Editar
+                Exibir
+                Favoritos
+                Ajuda
+
+            </div>
+
+
+            <div class="browser">
+
+                <div class="address-bar">
+
+                    <span>Address:</span>
+
+                    <input
+                        value="https://github.com/TordYamagata"
+                        readonly
+                    >
+
+                </div>
+
+
+                <div class="github-page">
+
+                    <div class="github-logo">
+                        <img src="https://i.pinimg.com/originals/e5/bd/3a/e5bd3a2f2cf2f6f4dad0f531b92564be.gif" alt="" width="100%">
+                    </div>
+
+                    <h1>
+                        TordYamagata
+                    </h1>
+
+                    <p>
+                        Repositórios • Projetos • Código
+                    </p>
+
+
+                    <button onclick="openGithub(
+                        'https://github.com/TordYamagata'
+                    )">
+
+                        Abrir GitHub
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             TERMINAL
+        ================================================== -->
+
+        <section class="window terminal-window" id="terminal">
+
+            <div class="title-bar">
+
+                <span>▣ Tord Terminal</span>
+
+                <div class="window-buttons">
+
+                    <button onclick="minimizeWindow('terminal')">
+                        _
+                    </button>
+
+                    <button onclick="maximizeWindow('terminal')">
+                        □
+                    </button>
+
+                    <button onclick="closeWindow('terminal')">
+                        ×
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <div class="terminal">
+
+                <p>
+                    Microsoft(R) Windows 98
+                </p>
+
+                <p>
+                    C:\TordYamagata&gt; whoami
+                </p>
+
+                <p>
+                    TordYamagata
+                </p>
+
+                <p>
+                    C:\TordYamagata&gt; skills
+                </p>
+
+                <p>
+                    HTML
+                    CSS
+                    JavaScript
+                    PHP
+                    Laravel
+                    Python
+                    SQL
+                </p>
+
+                <p>
+                    C:\TordYamagata&gt; status
+                </p>
+
+                <p class="green">
+                    ONLINE_
+                </p>
+
+            </div>
+
+        </section>
+
+    </div>
+
+
+
+    <!-- =====================================================
+         TASKBAR
+    ====================================================== -->
+
+    <footer class="taskbar">
+
+        <button
+            class="start-button"
+            onclick="toggleStartMenu()"
+        >
+
+            🪟 <strong>Iniciar</strong>
+
+        </button>
+
+
+        <div class="taskbar-divider"></div>
+
+
+        <div id="taskbarWindows"></div>
+
+
+        <div class="clock" id="clock">
+            00:00
+        </div>
+
+    </footer>
+
+
+
+    <!-- =====================================================
+         START MENU
+    ====================================================== -->
+
+    <div class="start-menu" id="startMenu">
+
+        <div class="start-header">
+            TordYamagata
+        </div>
+
+
+        <div
+            class="start-item"
+            onclick="openWindow('sobre')"
+        >
+            👤 Sobre Mim
+        </div>
+
+
+        <div
+            class="start-item"
+            onclick="openWindow('projetos')"
+        >
+            📁 Projetos
+        </div>
+
+
+        <div
+            class="start-item"
+            onclick="openWindow('habilidades')"
+        >
+            💻 Habilidades
+        </div>
+
+
+        <div
+            class="start-item"
+            onclick="openWindow('github')"
+        >
+            🌐 GitHub
+        </div>
+
+
+        <div
+            class="start-item"
+            onclick="openWindow('terminal')"
+        >
+            ▣ Terminal
+        </div>
+
+
+        <hr>
+
+
+        <div
+            class="start-item"
+            onclick="openGithub(
+                'https://github.com/TordYamagata'
+            )"
+        >
+            ⭐ Abrir GitHub
+        </div>
+
+
+        <div class="start-item">
+            ❌ Desligar
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
